@@ -1,6 +1,6 @@
 import { default as NextHead } from 'next/head'
 
-function Head({ title, description, bg }) {
+function Head({ title, image, description }) {
   return (
     <NextHead>
         <title>{title}</title>
@@ -11,7 +11,7 @@ function Head({ title, description, bg }) {
         <meta property="og:site_name" content="LOTR Quiz" />
         <meta property="og:description" content={description} />
         
-        <meta property="og:image" content={bg} />
+        <meta property="og:image" content={image} />
         <meta property="og:image:type" content="image/jpg" />
         <meta property="og:image:width" content="1920" />
         <meta property="og:image:height" content="1080" />
