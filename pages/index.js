@@ -4,8 +4,9 @@ import Widget from '../src/components/Widget';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import QuizBackground from '../src/components/QuizBackground';
-import Head from 'next/head'
+import Head from '../src/components/Head';
 import QuizLogo from '../src/components/QuizLogo';
+import Link from 'next/link'
 
 //const BackgroundImage = styled.div`
 //  background-image: url(${db.bg});
@@ -26,15 +27,10 @@ export const QuizContainer = styled.div`
 `;
 
 export default function Home() {
-  return (    
+  return (  
+  <>  
+    <Head title={db.title} image={db.bg} description={db.description} />       
     <QuizBackground backgroundImage={db.bg}>    
-    <Head>    
-     <title>Quiz FullStack Developer</title>
-     <meta name="title" content="Quiz FullStack Developer" /> 
-     <meta name="description" content="Quiz com React e NextJS criado durante Imersão Alura v2 ;)"></meta>
-     <meta property="og:title" content="Quiz FullStack Developer" />
-     <meta property="og:image" content={db.bg}></meta>
-    </Head>      
       <QuizContainer>
       <QuizLogo />
         <Widget>        
@@ -48,6 +44,9 @@ export default function Home() {
             front-end e o back-end, esse profissional também pode contribuir em
             todas as etapas e partes de um sistema, como o servidor e o banco de
             dados.
+            <Link href="/quiz">
+            <a>Acesse page quiz</a>
+            </Link>
           </p>
          </Widget.Content>
         </Widget>
@@ -67,5 +66,6 @@ export default function Home() {
       </QuizContainer>
        <GitHubCorner projectUrl="https://github.com/dgsdev" />
     </QuizBackground>
+  </>
   );
 }
