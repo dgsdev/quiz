@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-function Head({ bg, title, description }) {
+function Header({ bg, title, description }) {
   return (
     <Head>
         <title>{title}</title>
@@ -24,4 +24,4 @@ function Head({ bg, title, description }) {
   )
 }
 
-export default Head;
+export default Header;

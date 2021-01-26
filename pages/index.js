@@ -4,7 +4,7 @@ import Widget from '../src/components/Widget';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import QuizBackground from '../src/components/QuizBackground';
-import Head from '../src/components/Head';
+import Header from '../src/components/Head';
 import QuizLogo from '../src/components/QuizLogo';
 import Link from 'next/link'
 
@@ -29,7 +29,7 @@ export const QuizContainer = styled.div`
 export default function Home() {
   return (  
   <>  
-    <Head title={db.title} image={db.bg} description={db.description} />       
+    <Header title={db.title} image={db.bg} description={db.description} />       
     <QuizBackground backgroundImage={db.bg}>    
       <QuizContainer>
       <QuizLogo />
