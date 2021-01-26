@@ -1,6 +1,7 @@
 import Head from 'next/head'
+import db from './../../../db.json'
 
-function Header({ bg, title, description }) {
+export default function Home({ bg, title, description }) {
   return (
     <Head>
         <title>{title}</title>
@@ -11,7 +12,7 @@ function Header({ bg, title, description }) {
         <meta property="og:site_name" content="Quiz FullStack Developer" />
         <meta property="og:description" content={description} />
         
-        <meta property="og:image" content={bg} />
+        <meta property="og:image" content={db.bg} />
         <meta property="og:image:type" content="image/jpg" />
         <meta property="og:image:width" content="1920" />
         <meta property="og:image:height" content="1080" />
@@ -24,4 +25,3 @@ function Header({ bg, title, description }) {
   )
 }
 
-export default Header;
