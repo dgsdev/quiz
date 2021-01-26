@@ -4,7 +4,8 @@ import Widget from '../src/components/Widget';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import QuizBackground from '../src/components/QuizBackground';
-
+import Head from 'next/head'
+import QuizLogo from '../src/components/QuizLogo';
 
 //const BackgroundImage = styled.div`
 //  background-image: url(${db.bg});
@@ -25,10 +26,18 @@ export const QuizContainer = styled.div`
 `;
 
 export default function Home() {
-  return (
-    <QuizBackground backgroundImage={db.bg}>
+  return (    
+    <QuizBackground backgroundImage={db.bg}>    
+    <Head>    
+     <title>Quiz FullStack Developer</title>
+     <meta name="title" content="Quiz FullStack Developer" /> 
+     <meta name="description" content="Quiz com React e NextJS criado durante Imersão Alura v2 ;)"></meta>
+     <meta property="og:title" content="Quiz FullStack Developer" />
+     <meta property="og:image" content={db.bg}></meta>
+    </Head>      
       <QuizContainer>
-        <Widget>
+      <QuizLogo />
+        <Widget>        
             <Widget.Header>
               <h1>Quiz FullStack Developer</h1>
             </Widget.Header>
