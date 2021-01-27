@@ -1,7 +1,7 @@
 {
-    "bg": "https://ik.imagekit.io/feq0hccnlg/estrada169_NZdnOw2jk.jpg",
-    "title": "Quiz Fullstack",
-    "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+    "bg": "https://ik.imagekit.io/feq0hccnlg/999107_LS_yxRktr.jpg",
+    "title": "Quiz Universo Marvel",
+    "description": "Teste os seus conhecimentos sobre o Universo da Marvel Studios e vamos ver se está preparado para nova fase!",
     "questions": [
       {
         "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
@@ -32,11 +32,14 @@
     "theme": {
       "colors": {
         "primary": "#03a9f4",
-        "secondary": "#00e5ff",
+        "secondary": "#ffc233",
         "mainBg": "#171B35",
         "contrastText": "#FFFFFF",
-        "wrong": "#FF5722",
-        "success": "#4CAF50"
+        "wrong": "#ff6333",
+        "success": "#4CAF50",
+        "buttonHover": "#33bfff",
+        "inputFocus": "#1769aa",
+        "red": "#e50b14"
       },
       "borderRadius": "4px"
     }

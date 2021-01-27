@@ -2,22 +2,24 @@ import styled from 'styled-components';
 
 // src/components/Footer/index.js
 const FooterWrapper = styled.footer`
-  background-color: #00000070;
+  background-color: #000;
   padding: 20px;
   display: flex;
   align-items: center;
-  border-radius: 4px; 
+  border-radius: 10px;  
   img {
-    width: 58px;
-    margin-right: 23px;
+    width: 60px;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-right: 20px;
   }
   a {
-    color: white;
+    color: #ffc233;
     text-decoration: none;
-    transition: .3s;
+    transition: .1s;
     &:hover,
     &:focus {
-      opacity: .5;
+      opacity: .7;    
     }
     span {
       text-decoration: underline;
@@ -29,8 +31,8 @@ export default function Footer(props) {
   return (
     // eslint-disable-next-line react/jsx-props-no-spreading
     <FooterWrapper {...props}>
-      <a href="https://www.alura.com.br/">
-        <img src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg" alt="Logo Alura" />
+      <a href="https://github.com/dgsdev">
+        <img src="https://ik.imagekit.io/feq0hccnlg/LogoMakr-06pF9c_AlNn40ZhU0.png" alt="Logo Dgsdev" />
       </a>
       <p>
         Orgulhosamente criado durante

@@ -1,15 +1,17 @@
+/* eslint-disable linebreak-style */
 import styled from 'styled-components';
 
 const Widget = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
   border: 1px solid ${({ theme }) => theme.colors.primary};
-  background-color: ${({ theme }) => {
+  background-color: ${({ theme }) =>  theme.colors.mainBg};
+
     return theme.colors.mainBg;
 
   }};
 
-  border-radius: 4px;
+  border-radius: 10px;
   overflow: hidden;
 
   h1,
@@ -30,6 +32,7 @@ const Widget = styled.div`
 
 Widget.Header = styled.header`
   display: flex;
+  // eslint-disable-next-line linebreak-style
   justify-content: flex-start;
   align-items: center;
   padding: 18px 32px;
@@ -52,6 +55,60 @@ Widget.Content = styled.div`
     list-style: none;
     padding: 0;
   }
+& input {
+  height: 40px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 16px 0;
+  color: ${({ theme }) => theme.colors.contrastText};
+  font-size: 14px;
+  letter-spacing: 0.15px;
+  border: 1px solid ${({ theme }) => theme.colors.contrastText};
+  border-radius: 8px;
+  background-color: ${({ theme }) => theme.colors.mainBg};
+  outline: none;
+  transition: .35s;
+}
+& input:focus {
+  border-color: ${({ theme }) => theme.colors.inputFocus};
+ 
+}
+
+& button {
+  height: 40px;
+  width: 100%;
+  color: ${({ theme }) => theme.colors.contrastText};
+  font-weight: bold;
+  border: none;
+  font-size: 14px;
+  letter-spacing: 0.15px;
+  border-radius: 8px;  
+  background-color: ${({ theme }) => theme.colors.primary};
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  transition: .35s;
+}
+& button:hover {
+  background-color: ${({ theme }) => theme.colors.red};
+  font-weight: bold;
+}
+& a {
+  height: 40px;
+  width: 100%;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  color: ${({ theme }) => theme.colors.contrastText};
+  background: rgba(33, 150, 243, 0.35);
+  text-decoration: none;
+  border-radius: 10px;
+  transition: .35s;
+}
+& a:hover {
+  background-color: ${({ theme }) => theme.colors.primary};
+  opacity: .8;
+}
 `;
 
 export default Widget;

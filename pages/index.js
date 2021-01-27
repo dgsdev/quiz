@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-one-expression-per-line */
+/* eslint-disable jsx-a11y/media-has-caption */
 import React from 'react';
 import styled from 'styled-components';
 import { useRouter } from 'next/router';
@@ -35,12 +37,18 @@ export default function Home() {
   return (
     <>
       <Head title={db.title} image={db.bg} description={db.description} />
+      {/* backgroundImage={db.bg} */}
       <QuizBackground backgroundImage={db.bg}>
+        <div className="video">
+          <video video="" autobuffer="" autoPlay="autoplay" muted="muted" loop="loop" playsinline="" poster="sop-gradient-bg.jpg" className="video-bg">
+            <source src="https://ik.imagekit.io/feq0hccnlg/1564676115-marvel_tICIf9xFN.mp4" type="video/mp4" />
+          </video>
+        </div>
         <QuizContainer>
           <QuizLogo />
           <Widget>
             <Widget.Header>
-              <h1>Quiz FullStack Developer</h1>
+              <h1>Quiz Universo Marvel</h1>
             </Widget.Header>
             <Widget.Content>
               <form onSubmit={function (infosDoEvento) {
@@ -63,28 +71,21 @@ export default function Home() {
                   placeholder="Qual seu nome?"
                 />
                 <button type="submit" disabled={name.length === 0}>
-                  Jogar
-                  {name}
+                  <strong>Iniciar Quiz {name}</strong>
                 </button>
               </form>
-              <p>
-                O desenvolvedor full stack é capaz de trabalhar com toda a pilha de
-                desenvolvimento de um projeto. Além de conseguir atuar com o
-                front-end e o back-end, esse profissional também pode contribuir em
-                todas as etapas e partes de um sistema, como o servidor e o banco de
-                dados.
-              </p>
             </Widget.Content>
           </Widget>
           <Widget>
             <Widget.Header>
-              <h1>Dgsdev FullStack Developer</h1>
-            </Widget.Header>
+              <h1>Melhores Quizes da Galera</h1>
+            </Widget.Header> 
             <Widget.Content>
               <p>
-                Um desenvolvedor fullstack é aquele que atua não somente no front e
-                no back-end, mas sim em todas as etapas e partes do desenvolvimento,
-                como o banco de dados e servidor.
+                O Marvel é uma franquia de mídia que produz uma série de 
+                filmes de super-heróis, baseada em personagens que 
+                aparecem nas revistas em quadrinhos americanas publicadas 
+                pela Marvel Comics.
               </p>
             </Widget.Content>
           </Widget>
