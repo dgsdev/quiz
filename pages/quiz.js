@@ -1,5 +1,9 @@
 import React from 'react';
 
-export default function quiz() {
-  return <h1>Quiz</h1>
+export default function QuizPage() {
+  return (
+    <div>
+      Page Quiz!
+    </div>
+  );
 }
