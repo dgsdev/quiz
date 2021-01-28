@@ -14,7 +14,10 @@ export default function Home({ bg, title, description }) {
       <meta property="og:site_name" content="Quiz FullStack Developer" />
       <meta property="og:description" content={description} />
 
+      <meta property="og:url" content="https://quiz.dgsdev.vercel.app/" />
+
       <meta property="og:image" content={db.bg} />
+      <meta property="og:image:secure_url" content={db.bg} />
       <meta property="og:image:type" content="image/jpg" />
       <meta property="og:image:width" content="1920" />
       <meta property="og:image:height" content="1080" />

@@ -1,28 +1,28 @@
-/* eslint-disable jsx-a11y/media-has-caption */
 /* eslint-disable react/prop-types */
 /* eslint-disable linebreak-style */
+/* eslint-disable jsx-a11y/media-has-caption */
 import React from 'react';
 import db from '../db.json';
 import Widget from '../src/components/Widget';
 import QuizLogo from '../src/components/QuizLogo';
+import GitHubCorner from '../src/components/GitHubCorner';
 import QuizBackground from '../src/components/QuizBackground';
 import QuizContainer from '../src/components/QuizContainer';
 import AlternativesForm from '../src/components/AlternativesForm';
 import Button from '../src/components/Button';
-import GitHubCorner from '../src/components/GitHubCorner';
 
 function ResultWidget({ results }) {
   return (
     <Widget>
       <Widget.Header>
-        <h1> Quiz Universo Marvel, Resultado: </h1>
+        Tela de Resultado:
       </Widget.Header>
 
       <Widget.Content>
         <p>
           Você acertou
-          {' '}
-          {/* {results.reduce((somatoriaAtual, resultAtual) => {
+          {/* {' '}
+          {results.reduce((somatoriaAtual, resultAtual) => {
             const isAcerto = resultAtual === true;
             if (isAcerto) {
               return somatoriaAtual + 1;
@@ -40,10 +40,9 @@ function ResultWidget({ results }) {
               {index + 1}
               {' '}
               Resultado:
-              {' '}
               {result === true
-                ? 'Certa Resposta ✅'
-                : 'Incorreta Resposta❌'}
+                ? 'Acertou'
+                : 'Errou'}
             </li>
           ))}
         </ul>
@@ -82,10 +81,9 @@ function QuestionWidget({
   return (
     <Widget>
       <Widget.Header>
-        <h3>
-          {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
-        </h3>
+        <h3>{`Pergunta ${questionIndex + 1} de ${totalQuestions}`}</h3>
       </Widget.Header>
+
       <video
         video=""
         autobuffer=""
@@ -100,7 +98,7 @@ function QuestionWidget({
         <source src={question.vd} type="video/mp4" />
       </video>
       {/*
-      <img
+     <img
         alt="Descrição"
         style={{
           width: '100%',
@@ -127,9 +125,10 @@ function QuestionWidget({
               onSubmit();
               setIsQuestionSubmited(false);
               setSelectedAlternative(undefined);
-            }, 1 * 1500);
+            }, 3 * 1000);
           }}
         >
+
           {question.alternatives.map((alternative, alternativeIndex) => {
             const alternativeId = `alternative__${alternativeIndex}`;
             const alternativeStatus = isCorrect ? 'SUCCESS' : 'ERROR';
@@ -174,7 +173,7 @@ const screenStates = {
   RESULT: 'RESULT',
 };
 export default function QuizPage() {
-  const [screenState, setScreenState] = React.useState(screenStates.LOADING);
+  const [screenState, setScreenState] = React.useState(screenStates.RESULT);
   const [results, setResults] = React.useState([]);
   const totalQuestions = db.questions.length;
   const [currentQuestion, setCurrentQuestion] = React.useState(0);
@@ -196,8 +195,8 @@ export default function QuizPage() {
   React.useEffect(() => {
     // fetch() ...
     setTimeout(() => {
-      setScreenState(screenStates.QUIZ);
-    }, 1 * 1000);
+      // setScreenState(screenStates.QUIZ);
+    }, 1 * 1500);
   // nasce === didMount
   }, []);
 
@@ -226,7 +225,14 @@ export default function QuizPage() {
 
         {screenState === screenStates.LOADING && <LoadingWidget />}
 
-        {screenState === screenStates.RESULT && <ResultWidget results={results} />}
+        {screenState === screenStates.RESULT && (
+          <div>
+            {' '}
+            <ResultWidget result={results} />
+            {' '}
+          </div>
+        )}
+
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/dgsdev" />
     </QuizBackground>

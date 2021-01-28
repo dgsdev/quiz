@@ -1,15 +1,15 @@
 {
-    "bg": "https://ik.imagekit.io/feq0hccnlg/999107_LS_yxRktr.jpg",
     "vd": "https://ik.imagekit.io/feq0hccnlg/1564676115-marvel_tICIf9xFN.mp4",
-    "title": "Quiz Universo Marvel",
-    "description": "Teste os seus conhecimentos sobre filmes Universo da Marvel Studios e veja se está preparado para a nova fase da franquia!",
+    "bg": "https://ik.imagekit.io/feq0hccnlg/999107_LS_yxRktr.jpg",
+    "title": "Quiz | O Quando você sabe sobre o Universo Marvel?",
+    "description": "Teste os seus conhecimentos sobre filmes do Universo da Marvel Studios e veja se está preparado para a nova fase da franquia!",
     "questions": [
       {
         "vd": "https://ik.imagekit.io/feq0hccnlg/1564676115-marvel_tICIf9xFN.mp4",
         "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
         "title": "Qual foi o filme do Universo Marvel com maior bilheteria da história?",
-        "description": "Essa é pra aquecer! 🔥",
-        "answer": 3,
+        "description": "Vamos começar! 🔥",
+        "answer": 2,
         "alternatives": [
           "Pantera Negra",
           "Capitão América: Guerra Civil",
@@ -18,11 +18,11 @@
         ]
       },
       {
-        "vd": "https://ik.imagekit.io/feq0hccnlg/1564676115-marvel_tICIf9xFN.mp4",
+        "vd": "https://ik.imagekit.io/feq0hccnlg/ferroman_TBS4dXexk.mp4",
         "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
         "title": "Qual personagem é responsável por imobilizar Loki de tanto bater?",
         "description": "Essa nem precisa de dica 🤙🏼",
-        "answer": 4,
+        "answer": 3,
         "alternatives": [
            "Thor",
            "Capitão América",
@@ -31,11 +31,11 @@
         ]
       },
       {
-        "vd": "https://ik.imagekit.io/feq0hccnlg/1564676115-marvel_tICIf9xFN.mp4",
+        "vd": "https://ik.imagekit.io/feq0hccnlg/capitamarvel_sx6HKg27l.mp4",
         "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
         "title": "As joias da manopla de Thanos são:",
-        "description": "💎",
-        "answer": 2,
+        "description": "🤔",
+        "answer": 1,
         "alternatives": [
            "Joias da Realidade",
            "Joias do Infinito",
@@ -44,11 +44,11 @@
         ]
       },
       {
-        "vd": "https://ik.imagekit.io/feq0hccnlg/1564676115-marvel_tICIf9xFN.mp4",
+        "vd": "https://ik.imagekit.io/feq0hccnlg/ferroman2_AKLlQccPG.mp4",
         "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
         "title": "O Universo Cinematográfico Marvel (MCU) é dividido em fases, qual produção inicia a fase 4?",
         "description": "A fase 4 começou oficialmente nesse ano, 2021!",
-        "answer": 1,
+        "answer": 0,
         "alternatives": [
            "WandaVision",
            "Capitão América: Guerra Civil",
@@ -57,11 +57,11 @@
         ]
       },
       {
-        "vd": "https://ik.imagekit.io/feq0hccnlg/1564676115-marvel_tICIf9xFN.mp4",
+        "vd": "https://ik.imagekit.io/feq0hccnlg/vingadores_NDmuat3Ix.mp4",
         "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
         "title": "Além de Thor, qual outro Vingador foi digno de levantar o Mjolnir?",
         "description": "Levou vários filmes para um vingador merecer tal feito...",
-        "answer": 3,
+        "answer": 2,
         "alternatives": [
            "Homem de Ferro",
            "Hulk",
@@ -74,7 +74,7 @@
         "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
         "title": "Quem foi a primeira inteligência artificial criada por Tony Stark?",
         "description": "Elom Musk, curtiu essa! 👍🏼 ",
-        "answer": 1,
+        "answer": 0,
         "alternatives": [
            "Dum-E",
            "Ultron",
