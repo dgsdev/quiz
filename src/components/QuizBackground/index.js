@@ -32,7 +32,7 @@ const QuizBackground = styled.div`
       z-index: 10;
     }
   }
-
+/*
 .video-bg {
   object-fit: cover;
   position: fixed;
@@ -58,7 +58,7 @@ const QuizBackground = styled.div`
     .video-bg {
        width:auto;
         height: 100%;
-        /*display: none;*/
+        /*display: none;
     }
 }    
     @media (max-width: 415px) {
@@ -67,7 +67,7 @@ const QuizBackground = styled.div`
         height: 250px;         
     }
 }
- 
+*/ 
   
 `;
 

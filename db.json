@@ -1,30 +1,88 @@
 {
     "bg": "https://ik.imagekit.io/feq0hccnlg/999107_LS_yxRktr.jpg",
+    "vd": "https://ik.imagekit.io/feq0hccnlg/1564676115-marvel_tICIf9xFN.mp4",
     "title": "Quiz Universo Marvel",
-    "description": "Teste os seus conhecimentos sobre o Universo da Marvel Studios e vamos ver se está preparado para nova fase!",
+    "description": "Teste os seus conhecimentos sobre filmes Universo da Marvel Studios e veja se está preparado para a nova fase da franquia!",
     "questions": [
       {
+        "vd": "https://ik.imagekit.io/feq0hccnlg/1564676115-marvel_tICIf9xFN.mp4",
         "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
-        "answer": 2,
+        "title": "Qual foi o filme do Universo Marvel com maior bilheteria da história?",
+        "description": "Essa é pra aquecer! 🔥",
+        "answer": 3,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Pantera Negra",
+          "Capitão América: Guerra Civil",
+          "Vingadores: Ultimato",
+          "Vingadores: Guerra Infinita"
         ]
       },
       {
+        "vd": "https://ik.imagekit.io/feq0hccnlg/1564676115-marvel_tICIf9xFN.mp4",
         "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
-        "answer": 0,
+        "title": "Qual personagem é responsável por imobilizar Loki de tanto bater?",
+        "description": "Essa nem precisa de dica 🤙🏼",
+        "answer": 4,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "Thor",
+           "Capitão América",
+           "Bruce Banner",
+           "Hulk"
+        ]
+      },
+      {
+        "vd": "https://ik.imagekit.io/feq0hccnlg/1564676115-marvel_tICIf9xFN.mp4",
+        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+        "title": "As joias da manopla de Thanos são:",
+        "description": "💎",
+        "answer": 2,
+        "alternatives": [
+           "Joias da Realidade",
+           "Joias do Infinito",
+           "Joias do Poder",
+           "Joias do Tempo"
+        ]
+      },
+      {
+        "vd": "https://ik.imagekit.io/feq0hccnlg/1564676115-marvel_tICIf9xFN.mp4",
+        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+        "title": "O Universo Cinematográfico Marvel (MCU) é dividido em fases, qual produção inicia a fase 4?",
+        "description": "A fase 4 começou oficialmente nesse ano, 2021!",
+        "answer": 1,
+        "alternatives": [
+           "WandaVision",
+           "Capitão América: Guerra Civil",
+           "Homem de Ferro",
+           "Homem de Ferro3"
+        ]
+      },
+      {
+        "vd": "https://ik.imagekit.io/feq0hccnlg/1564676115-marvel_tICIf9xFN.mp4",
+        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+        "title": "Além de Thor, qual outro Vingador foi digno de levantar o Mjolnir?",
+        "description": "Levou vários filmes para um vingador merecer tal feito...",
+        "answer": 3,
+        "alternatives": [
+           "Homem de Ferro",
+           "Hulk",
+           "Capitão América",
+           "Capitã Marvel"
+        ]
+      },
+      {
+        "vd": "https://ik.imagekit.io/feq0hccnlg/1564676115-marvel_tICIf9xFN.mp4",
+        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+        "title": "Quem foi a primeira inteligência artificial criada por Tony Stark?",
+        "description": "Elom Musk, curtiu essa! 👍🏼 ",
+        "answer": 1,
+        "alternatives": [
+           "Dum-E",
+           "Ultron",
+           "J.A.R.V.I.S",
+           "Sexta-Feira"
         ]
       }
+      
     ],
     "external": [
       ""
@@ -32,15 +90,16 @@
     "theme": {
       "colors": {
         "primary": "#03a9f4",
-        "secondary": "#ffc233",
+        "secondary": "#29b6f6",
         "mainBg": "#171B35",
         "contrastText": "#FFFFFF",
-        "wrong": "#ff6333",
+        "wrong": "#FF5722",
         "success": "#4CAF50",
         "buttonHover": "#33bfff",
         "inputFocus": "#1769aa",
-        "red": "#e50b14"
+        "red": "#e64224",
+        "black": "#000"
       },
-      "borderRadius": "4px"
+      "borderRadius": "10px"
     }
   }

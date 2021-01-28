@@ -1,5 +1,4 @@
-/* eslint-disable react/jsx-one-expression-per-line */
-/* eslint-disable jsx-a11y/media-has-caption */
+/* eslint-disable max-len */
 import React from 'react';
 import styled from 'styled-components';
 import { useRouter } from 'next/router';
@@ -11,6 +10,8 @@ import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import QuizBackground from '../src/components/QuizBackground';
 import QuizLogo from '../src/components/QuizLogo';
+import Input from '../src/components/Input';
+import Button from '../src/components/Button';
 
 // const BackgroundImage = styled.div`
 //  background-image: url(${db.bg});
@@ -39,11 +40,13 @@ export default function Home() {
       <Head title={db.title} image={db.bg} description={db.description} />
       {/* backgroundImage={db.bg} */}
       <QuizBackground backgroundImage={db.bg}>
+        {/*
         <div className="video">
           <video video="" autobuffer="" autoPlay="autoplay" muted="muted" loop="loop" playsinline="" poster="sop-gradient-bg.jpg" className="video-bg">
             <source src="https://ik.imagekit.io/feq0hccnlg/1564676115-marvel_tICIf9xFN.mp4" type="video/mp4" />
           </video>
         </div>
+        */}
         <QuizContainer>
           <QuizLogo />
           <Widget>
@@ -61,18 +64,15 @@ export default function Home() {
               // router manda para a próxima page
               }}
               >
-                <input
-                  onChange={function (infosDoEvento) {
-                    console.log(infosDoEvento.target.value);
-                    // State
-                    // name = infosDoEvento.target.value;
-                    setName(infosDoEvento.target.value);
-                  }}
+                <Input
+                  name="nomeDoUsuario"
+                  onChange={(infosDoEvento) => setName(infosDoEvento.target.value)}
                   placeholder="Qual seu nome?"
+                  value={name}
                 />
-                <button type="submit" disabled={name.length === 0}>
-                  <strong>Iniciar Quiz {name}</strong>
-                </button>
+                <Button type="submit" disabled={name.length === 0}>
+                 <strong>{`Jogar Quiz ${name}`}</strong>
+                </Button>
               </form>
             </Widget.Content>
           </Widget>

@@ -1,25 +1,30 @@
+/* eslint-disable linebreak-style */
+import React from 'react';
 import styled from 'styled-components';
-
 // src/components/Footer/index.js
 const FooterWrapper = styled.footer`
-  background-color: #000;
-  padding: 20px;
+  background-color: ${({ theme }) => theme.colors.red};
   display: flex;
   align-items: center;
-  border-radius: 10px;  
+  border-radius: 10px; 
+ 
   img {
-    width: 60px;
-    padding-left: 10px;
+    width: 65px;
+    padding-left: 20px;
     padding-top: 5px;
-    margin-right: 20px;
+    margin: 4px;
   }
-  a {
-    color: #ffc233;
+  a, p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 2px;
+    margin: 4px;
     text-decoration: none;
     transition: .1s;
     &:hover,
     &:focus {
-      opacity: .7;    
+      opacity: .7;         
     }
     span {
       text-decoration: underline;
@@ -37,7 +42,7 @@ export default function Footer(props) {
       <p>
         Orgulhosamente criado durante
         {' '}
-        a
+        a <br />
         {' '}
         <a href="https://www.alura.com.br/">
           <span>Imersão React da Alura</span>
