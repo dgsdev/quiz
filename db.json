@@ -1,12 +1,10 @@
 {
-    "vd": "https://ik.imagekit.io/feq0hccnlg/1564676115-marvel_tICIf9xFN.mp4",
     "bg": "https://ik.imagekit.io/feq0hccnlg/999107_LS_yxRktr.jpg",
     "title": "Quiz | O Quando você sabe sobre o Universo Marvel?",
     "description": "Teste os seus conhecimentos sobre filmes do Universo da Marvel Studios e veja se está preparado para a nova fase da franquia!",
     "questions": [
       {
-        "vd": "https://ik.imagekit.io/feq0hccnlg/1564676115-marvel_tICIf9xFN.mp4",
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+        "image": "https://media.tenor.com/images/406dbaa87361f469e5b43e9f6099c4cf/tenor.gif",
         "title": "Qual foi o filme do Universo Marvel com maior bilheteria da história?",
         "description": "Vamos começar! 🔥",
         "answer": 2,
@@ -18,8 +16,7 @@
         ]
       },
       {
-        "vd": "https://ik.imagekit.io/feq0hccnlg/ferroman_TBS4dXexk.mp4",
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+        "image": "https://media1.tenor.com/images/f18c3be11e3562132ff7550af6849f6a/tenor.gif?itemid=12872439",
         "title": "Qual personagem é responsável por imobilizar Loki de tanto bater?",
         "description": "Essa nem precisa de dica 🤙🏼",
         "answer": 3,
@@ -31,10 +28,9 @@
         ]
       },
       {
-        "vd": "https://ik.imagekit.io/feq0hccnlg/capitamarvel_sx6HKg27l.mp4",
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+        "image": "https://media.tenor.com/images/a730bd67f8fe000f329b016ae0a04099/tenor.gif",
         "title": "As joias da manopla de Thanos são:",
-        "description": "🤔",
+        "description": "🤪",
         "answer": 1,
         "alternatives": [
            "Joias da Realidade",
@@ -44,8 +40,7 @@
         ]
       },
       {
-        "vd": "https://ik.imagekit.io/feq0hccnlg/ferroman2_AKLlQccPG.mp4",
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+        "image": "https://media1.tenor.com/images/04afa3c767a152dfcb416cb82462c95d/tenor.gif?itemid=14440253",
         "title": "O Universo Cinematográfico Marvel (MCU) é dividido em fases, qual produção inicia a fase 4?",
         "description": "A fase 4 começou oficialmente nesse ano, 2021!",
         "answer": 0,
@@ -57,8 +52,7 @@
         ]
       },
       {
-        "vd": "https://ik.imagekit.io/feq0hccnlg/vingadores_NDmuat3Ix.mp4",
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+        "image": "https://media.tenor.com/images/acba0fb497387b9d17c701495ad02181/tenor.gif",
         "title": "Além de Thor, qual outro Vingador foi digno de levantar o Mjolnir?",
         "description": "Levou vários filmes para um vingador merecer tal feito...",
         "answer": 2,
@@ -70,8 +64,7 @@
         ]
       },
       {
-        "vd": "https://ik.imagekit.io/feq0hccnlg/1564676115-marvel_tICIf9xFN.mp4",
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+        "image": "https://media.tenor.com/images/7a6085058d50fb815a9b13a2b528d855/tenor.gif",
         "title": "Quem foi a primeira inteligência artificial criada por Tony Stark?",
         "description": "Elom Musk, curtiu essa! 👍🏼 ",
         "answer": 0,
@@ -81,11 +74,62 @@
            "J.A.R.V.I.S",
            "Sexta-Feira"
         ]
+      },
+      {
+        "image": "https://media.tenor.com/images/6f5f965d8994d1cb702a29552e1821be/tenor.gif",
+        "title": "Qual foi o primeiro filme lançado da Saga do Infinito do Universo Marvel?",
+        "description": "📺",
+        "answer": 3,
+        "alternatives": [
+           "O Incrível Hulk",
+           "Thor",
+           "Capitão América: O Primeiro Vingador",
+           "Homem de Ferro"
+        ]
+      }, 
+      {
+        "image": "https://media.tenor.com/images/e604d2c011f8dc3b5cb943fad7b38cc6/tenor.gif",
+        "title": "Qual o objetivo do Thanos ao reunir as Joias do Infinito?",
+        "description": "💀☠️💀",
+        "answer": 2,
+        "alternatives": [
+           "Ser o supremo do universo",
+           "Destruir os Vingadores",
+           "Aniquilar metade dos seres do universo",
+           "Se tornar imortal"
+        ]
+      },       
+      {
+        "image": "https://media.tenor.com/images/3358f5c3dcb0749c44124ca618896b8d/tenor.gif",
+        "title": "Qual desses heróis é o mais velho?",
+        "description": "⏳",
+        "answer": 3,
+        "alternatives": [
+           "Hulk",
+           "Nick Fury",
+           "Thor",
+           "Capitão América"
+        ]
+      },
+       {
+        "image": "https://media.tenor.com/images/87d25d0b0009efaa40c8222500401296/tenor.gif",
+        "title": "Qual desses filmes da Marvel não serão lançados em 2021",
+        "description": "Muito bem, última questão do quiz! o/",
+        "answer": 2,
+        "alternatives": [
+           "Eternos",
+           "Loki",
+           "Vingadores 5",
+           "Viúva Negra"
+        ]
       }
       
     ],
     "external": [
-      ""
+      "https://aluraquiz-base.alura-challenges.vercel.app/",
+      "quiz.dgsdev.vercel.app",
+      "https://chessquiz-alura.leo0liveira.vercel.app/",
+      "https://biblequiz.epsilveira.vercel.app/"
     ],
     "theme": {
       "colors": {
@@ -97,7 +141,7 @@
         "success": "#4CAF50",
         "buttonHover": "#33bfff",
         "inputFocus": "#1769aa",
-        "red": "#e64224",
+        "red": "#e60000",
         "black": "#000"
       },
       "borderRadius": "10px"

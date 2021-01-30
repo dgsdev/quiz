@@ -1,15 +1,24 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable jsx-a11y/media-has-caption */
 /* eslint-disable react/prop-types */
 /* eslint-disable linebreak-style */
 import React from 'react';
-import db from '../db.json';
-import Widget from '../src/components/Widget';
-import QuizLogo from '../src/components/QuizLogo';
-import QuizBackground from '../src/components/QuizBackground';
-import QuizContainer from '../src/components/QuizContainer';
-import AlternativesForm from '../src/components/AlternativesForm';
-import Button from '../src/components/Button';
-import GitHubCorner from '../src/components/GitHubCorner';
+import db from '../../db.json';
+import Widget from '../../src/components/Widget';
+import QuizLogo from '../../src/components/QuizLogo';
+import QuizBackground from '../../src/components/QuizBackground';
+import QuizContainer from '../../src/components/QuizContainer';
+import AlternativesForm from '../../src/components/AlternativesForm';
+import Button from '../../src/components/Button';
+import GitHubCorner from '../../src/components/GitHubCorner';
+import BackLinkArrow from '../../src/components/BackLinkArrow';
+
+export async function getServerSideProps() {
+  await new Promise((resolve) => {
+    setTimeout(resolve, 2000);
+  });
+  return { props: {} };
+}
 
 function ResultWidget({ results }) {
   return (
@@ -35,7 +44,7 @@ function ResultWidget({ results }) {
         </p>
         <ul>
           {results.map((result, index) => (
-            <li key={`result__${result}`}>
+            <li key={`result__${index}`}>
               #
               {index + 1}
               {' '}
@@ -51,21 +60,6 @@ function ResultWidget({ results }) {
     </Widget>
   );
 }
-
-function LoadingWidget() {
-  return (
-    <Widget>
-      <Widget.Header>
-        Carregando...
-      </Widget.Header>
-
-      <Widget.Content>
-        [Desafio do Loading]
-      </Widget.Content>
-    </Widget>
-  );
-}
-
 function QuestionWidget({
   question,
   questionIndex,
@@ -82,10 +76,12 @@ function QuestionWidget({
   return (
     <Widget>
       <Widget.Header>
+        <BackLinkArrow href="/" />
         <h3>
           {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
         </h3>
       </Widget.Header>
+      {/*
       <video
         video=""
         autobuffer=""
@@ -99,7 +95,8 @@ function QuestionWidget({
       >
         <source src={question.vd} type="video/mp4" />
       </video>
-      {/*
+      */}
+
       <img
         alt="Descrição"
         style={{
@@ -109,7 +106,7 @@ function QuestionWidget({
         }}
         src={question.image}
       />
-      */}
+
       <Widget.Content>
         <h2>
           {question.title}
@@ -127,7 +124,7 @@ function QuestionWidget({
               onSubmit();
               setIsQuestionSubmited(false);
               setSelectedAlternative(undefined);
-            }, 1 * 1500);
+            }, 1 * 1000);
           }}
         >
           {question.alternatives.map((alternative, alternativeIndex) => {
@@ -224,7 +221,7 @@ export default function QuizPage() {
           />
         )}
 
-        {screenState === screenStates.LOADING && <LoadingWidget />}
+        {screenState === screenStates.LOADING}
 
         {screenState === screenStates.RESULT && <ResultWidget results={results} />}
       </QuizContainer>

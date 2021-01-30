@@ -11,7 +11,7 @@ export default function Home({ bg, title, description }) {
       <meta property="og:locale" content="pt_BR" />
 
       <meta property="og:title" content={title} />
-      <meta property="og:site_name" content="Quiz FullStack Developer" />
+      <meta property="og:site_name" content="Quiz Universo Marvel" />
       <meta property="og:description" content={description} />
 
       <meta property="og:url" content="https://quiz.dgsdev.vercel.app/" />
