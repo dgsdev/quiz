@@ -125,11 +125,8 @@
       }
       
     ],
-    "external": [
-      "https://aluraquiz-base.alura-challenges.vercel.app/",
-      "quiz.dgsdev.vercel.app",
-      "https://chessquiz-alura.leo0liveira.vercel.app/",
-      "https://biblequiz.epsilveira.vercel.app/"
+    "external": [      
+      "quiz.dgsdev.vercel.app"
     ],
     "theme": {
       "colors": {

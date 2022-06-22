@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 // src/components/Footer/index.js
 const FooterWrapper = styled.footer`
-  background-color: ${({ theme }) => theme.colors.red};
+  background-color: ${({ theme }) => theme.colors.MainBg};
   display: flex;
   align-items: center;
   border-radius: 10px; 
@@ -40,12 +40,12 @@ export default function Footer(props) {
         <img src="https://ik.imagekit.io/feq0hccnlg/LogoMakr-06pF9c_AlNn40ZhU0.png" alt="Logo Dgsdev" />
       </a>
       <p>
-        Orgulhosamente criado durante
+        Feito com React e NextJS 2020 ;)
         {' '}
-        a <br />
+        <br />
         {' '}
-        <a href="https://www.alura.com.br/">
-          <span>Imersão React da Alura</span>
+        <a href="https://github.com/dgsdev/quiz">
+          <span>Veja o Código do Projeto!</span>
         </a>
       </p>
     </FooterWrapper>

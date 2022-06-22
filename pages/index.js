@@ -11,7 +11,7 @@ import Widget from '../src/components/Widget';
 import Link from '../src/components/Link';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
-import QuizBackground from '../src/components/QuizBackground';
+import QuizBack from '../src/components/QuizBack';
 import QuizLogo from '../src/components/QuizLogo';
 import Input from '../src/components/Input';
 import Button from '../src/components/Button';
@@ -35,12 +35,12 @@ export default function Home() {
     <>
       <Head title={db.title} image={db.bg} description={db.description} />
       {/* backgroundImage={db.bg} */}
-      <QuizBackground backgroundImage={db.bg}>
-        {/* <div className="video">
+      <QuizBack>
+         <div className="video">
           <video video="" autobuffer="" autoPlay="autoplay" muted loop="loop" className="video-bg">
             <source src="https://ik.imagekit.io/feq0hccnlg/1564676115-marvel_tICIf9xFN.mp4" type="video/mp4" />
           </video>
-        </div> */}
+        </div> 
         <QuizContainer>
           <QuizLogo />
           <Widget
@@ -90,7 +90,7 @@ export default function Home() {
             animate="show"
           >
             <Widget.Header>
-              <h1>Melhores Quizes da Galera</h1>
+              <h1></h1>
             </Widget.Header>
             <Widget.Content>
               <ul>
@@ -104,8 +104,8 @@ export default function Home() {
                   return (
                     <li key={linkExterno}>
                       <Widget.Topic
-                        as={Link}
-                        href={`/quiz/${projectName}___${githubUser}`}
+                        //as={Link}
+                        //href={`/quiz/${projectName}___${githubUser}`}
                       >
                         {`${githubUser}/${projectName}`}
                       </Widget.Topic>
@@ -127,7 +127,7 @@ export default function Home() {
           />
         </QuizContainer>
         <GitHubCorner projectUrl="https://github.com/dgsdev" />
-      </QuizBackground>
+      </QuizBack>
     </>
   );
 }
